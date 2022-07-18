@@ -8,12 +8,12 @@
     ` 
   docker -v 
   docker-compose -v
-  `
-  * start the database by running 
-  `docker-compose up --build`
+  
   
 # 2. Spring boot app
   * clone the repository
+  * start the database by running 
+  `docker-compose up --build`
   * open and run the project in your favorite ide (intellj) 
   
 # 3. Make request
