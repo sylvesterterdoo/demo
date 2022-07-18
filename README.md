@@ -9,6 +9,8 @@
   docker -v 
   docker-compose -v
   `
+  * start the database by running 
+  `docker-compose up --build`
   
 # 2. Spring boot app
   * clone the repository
