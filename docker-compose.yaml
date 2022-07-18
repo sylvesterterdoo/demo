@@ -1,18 +1,17 @@
-version: '3.1'
+version: '3.6'
 services:
-  app:
-    container_name: springnative
-    image: springnative
-    build: ./
-    ports:
-      - "8080:8080"
-    depends_on:
-      - pg
-  pg:
+  postgres:
     image: postgres
+    restart: always
+    environment:
+      - DATABASE_HOST=127.0.0.1
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=demodb
+
     ports:
       - "5432:5432"
-    environment:
-      - POSTGRES_PASSWORD=password
-      - POSTGRES_USER=postgres
-      - POSTGRES_DB=demodb
+    volumes:
+      - ./docker_postgres_init.sql:/docker-entrypoint-initdb.d/docker_postgres_init.sql
+
+

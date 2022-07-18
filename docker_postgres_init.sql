@@ -1,0 +1,2 @@
+CREATE USER postgres WITH PASSWORD 'password' CREATEDB;
+CREATE DATABASE demodb;
