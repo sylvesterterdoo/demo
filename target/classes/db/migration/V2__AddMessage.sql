@@ -1,0 +1,1 @@
+INSERT INTO message (id, content) VALUES ('2d4805e0-05ec-11ed-b939-0242ac120002', 'Hello World');
