@@ -6,12 +6,13 @@
   `
   * check docker and docker compose version 
     ` 
-  docker -v 
-  docker-compose -v
+  `docker -v `
+  `docker-compose -v`
   
   
 # 2. Spring boot app
   * clone the repository
+  * Navigate into the project to where the docker-compose file exist
   * start the database by running 
   `docker-compose up --build`
   * open and run the project in your favorite ide (intellj) 
