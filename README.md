@@ -19,5 +19,5 @@
   `http://localhost:8080/api/message`
  
 # 4. Result
-   `Hello world should be logged and returned`
+   `"Hello world" should be logged and returned`
  
